@@ -36,7 +36,7 @@ do
 
     if [[ ! -f "$file" ]]
     then
-        echo "$file is not a file"
+        echo "$(basename "$file") is not a file" # basename - используется для получения только названия файла из полного пути
         exit 1
     fi
 
