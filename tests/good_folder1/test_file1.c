@@ -1,5 +1,5 @@
 #include <stdio.h>
-// это какой то код на С
+// это какой то код на С коомм - 2
 int main() {
 
     int summ_razn=0, razn=0, max_razn=0, n;

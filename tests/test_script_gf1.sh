@@ -1,7 +1,7 @@
 #!/bin/bash
 
 chmod +x ../dz.sh
-result=`../dz.sh good_folder`
+result=`../dz.sh good_folder1`
 expected="Количество строчек кода: 28
 Количество строк с комментариями: 2
 Количество пустых строчек: 3
