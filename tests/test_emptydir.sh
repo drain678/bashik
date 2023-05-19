@@ -1,23 +1,25 @@
 #!/bin/bash
 
-dirr="empty"
+directory="empty"
 
-mkdir dirr
+mkdir $directory
+
 chmod +x ../dz.sh
-result=`../dz.sh dirr`
-expected="dirr is an empty directory
+result=`../dz.sh $directory`
+expected="$directory is an empty directory
 Количество строчек кода: 0
 Количество строк с комментариями: 0
 Количество пустых строчек: 0"
+
 if [[ $result == $expected ]]
 then
-    echo "тест на то, что эта папка пуста пройден успешно"
-    rm -r dirr
+    echo "тест на то, что папка пуста - пройден успешно"
+    rm -r $directory
     exit 0
 else
-    echo "тест на то, что эта папка пуста провален"
+    echo "тест на то, что папка пуста - провален"
     echo "ожидалось: $expected" 
     echo "получено: $result" 
-    rm -r dirr
+    rm -r $directory
     exit 1
 fi

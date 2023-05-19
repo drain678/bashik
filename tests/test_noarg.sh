@@ -5,10 +5,10 @@ result=`../dz.sh`
 expected="No arguments"
 if [[ $result == $expected ]]
 then
-    echo "тест на то, что нет аргументов пройден успешно"
+    echo "тест на то, что нет аргументов пройден - успешно"
     exit 0
 else
-    echo "тест на то, что нет аргументов провален"
+    echo "тест на то, что нет аргументов - провален"
     echo "ожидалось: $expected" 
     echo "получено: $result" 
     exit 1
